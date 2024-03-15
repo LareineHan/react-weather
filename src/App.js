@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import { useEffect, useState } from 'react';
 import ClipLoader from 'react-spinners/ClipLoader';
 import { Container } from 'react-bootstrap';
@@ -15,7 +14,6 @@ function App() {
 	const [city, setCity] = useState(null);
 	const [loading, setLoading] = useState(false);
 	const [apiError, setAPIError] = useState('');
-	console.log('API_KEY', API_KEY);
 	const getWeatherByCurrentLocation = async (lat, lon) => {
 		try {
 			let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
@@ -43,7 +41,6 @@ function App() {
 			let data = await response.json();
 			setWeather(data);
 			setLoading(false);
-			console.log('Getting', data.name, ' weather data: ', data);
 		} catch (error) {
 			setAPIError(error.message);
 			setLoading(false);
