@@ -82,9 +82,13 @@ body {
         background-size:150vh;
   }
   .btn-container {
-    margin-top: 1em;
+    margin-top: 2em;
     width: 100%;
   }
+  .weather-box{
+    margin-top: -100px;
+    padding: 37px;
+}
 }
 
 
