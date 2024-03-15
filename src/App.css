@@ -101,10 +101,14 @@ body {
         background-size:150vh;
         }
 .btn-container {
-    margin-top: 1em;
+    margin-top: 0.5em;
     width: 80%;
     justify-content: center;
     align-self: center;;
+    }
+    .weather-box{
+        margin-top: -70px;
+        padding: 40px;
     }
 }
 
@@ -117,9 +121,13 @@ body {
         background-size:150vh;
         }
 .btn-container {
-    margin-top: 1em;
+    margin-top: 0.5em;
     width: 80%;
     justify-content: center;
     align-self: center;;
+    }
+    .weather-box{
+        margin-top: -60px;
+        padding: 37px;
     }
 }
