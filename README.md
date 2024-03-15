@@ -1,10 +1,10 @@
-# My Weather App
+# :star: React: Ready Set Weather app:star:
 
-Welcome to **My Weather App**! This project was developed as part of my programming journey. It allows users to check the current weather conditions for their location or any city they choose.
+Welcome to **Ready Set Weather**! This project was developed as part of my programming journey. It allows users to check the current weather conditions for their location or any city they choose.
 
 ## UI
 
-![Weather App Screenshot](src/img/screenshot_weatherapp.png?raw=true "Weather App")
+![Weather App Screenshot](src/img/screenshot_weatherapp.png?raw=true "Ready Set Weather")
 
 ## Features
 
@@ -39,11 +39,24 @@ Welcome to **My Weather App**! This project was developed as part of my programm
 - OpenWeatherMap API
 - Geolocation API
 
-## Contributing
+## Live Version
 
-Contributions are welcome! If you find any issues or have suggestions, feel free to create a pull request.
+You can also view the live version [here](https://readysetweather.netlify.app/)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the ISC License.
 
+## Author
+
+Lareine Han
+
+## Thank You!
+
+Thank you for checking out my project! You can learn more about me and my work at the following links:
+
+- 🌐 [Website](https://lareinehan.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/lareinehan)
+- 🧵 [Threads](https://threads.com/lareinehan)
+
+Please feel free to reach out if you have any questions or feedback!
