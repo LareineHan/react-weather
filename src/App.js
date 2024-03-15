@@ -59,6 +59,7 @@ function App() {
 			setLoading(true);
 			getWeatherByCity();
 		}
+		// eslint-disable-next-line
 	}, [city]);
 
 	const handleCityChange = (city) => {
