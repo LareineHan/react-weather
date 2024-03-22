@@ -69,7 +69,6 @@ function App() {
 
 	return (
 		<>
-			{' '}
 			<Container className='vh-100'>
 				{loading ? (
 					<div className='container'>

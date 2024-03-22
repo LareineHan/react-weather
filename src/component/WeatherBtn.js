@@ -12,6 +12,7 @@ const WeatherBtn = ({ cities, selectedCity, handleCityChange }) => {
 			</Button>
 			{cities.map((city) => (
 				<Button
+					key={city}
 					variant={selectedCity === city ? 'success' : 'warning'}
 					onClick={() => handleCityChange(city)}>
 					{city.toUpperCase()}
