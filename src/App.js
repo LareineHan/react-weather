@@ -3,7 +3,6 @@ import ClipLoader from 'react-spinners/ClipLoader';
 import { Container } from 'react-bootstrap';
 import WeatherBox from './component/WeatherBox';
 import WeatherBtn from './component/WeatherBtn';
-// import REACT_APP_WEATHER_API_KEY from './key';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 const cities = ['paris', 'new york', 'london', 'tokyo', 'seoul', 'dubai'];
