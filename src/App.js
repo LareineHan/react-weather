@@ -60,23 +60,14 @@ function App() {
 		// Get day of the week
 		const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 		const dayOfWeek = days[localTime.getDay()];
-		const hours = ('0' + localTime.getHours()).slice(-2); //
-		const minutes = ('0' + localTime.getMinutes()).slice(-2);
-		// Set local time and day for the city
-		// Get local time without seconds
+
 		const localTimeWithoutSeconds = localTime.toLocaleTimeString([], {
 			hour12: true,
 			hour: 'numeric',
 			minute: '2-digit',
 			timeZone: 'UTC',
 		});
-
-		// Set local time and day for the city
 		data.localTime = `${dayOfWeek} ${localTimeWithoutSeconds}`;
-		// data.localTime = `${dayOfWeek} ${hours}:${minutes} //
-		//  ${localTime.toLocaleTimeString([], {
-		// 		timeZone: 'UTC',
-		// 	})}`; //
 	};
 
 	useEffect(() => {
@@ -107,13 +98,16 @@ function App() {
 					</div>
 				) : !apiError ? (
 					<div className='container'>
-						<WeatherBox weather={weather} localTime={weather.localTime} />
-
-						<WeatherBtn
-							cities={cities}
-							handleCityChange={handleCityChange}
-							selectedCity={city}
-						/>
+						{weather && weather.localTime && (
+							<>
+								<WeatherBox weather={weather} localTime={weather.localTime} />
+								<WeatherBtn
+									cities={cities}
+									handleCityChange={handleCityChange}
+									selectedCity={city}
+								/>
+							</>
+						)}
 					</div>
 				) : (
 					apiError
